@@ -72,10 +72,10 @@ for each_task_id in task_id_list:
 
     formatted_task = {
         'DATE': formatted_date,
-        'REQUIREMENT': "#" + task['id'] + ": " + task['subject'],
+        'REQUIREMENT': "#" + task['id'] + ": " + task['subject'] + " - " + task['project'],
         'EMPLOYEE NAME': 'Chamud Sachintha',
         'CR / BUG / TASK': task['type'],
-        'PLATFORM (PHP / JAVA)': task['project']
+        'PLATFORM (PHP / JAVA)': ("JAVA" if task['project'] == "JAVA" else "PHP") 
     }
 
     # Convert the dictionary to a list in the correct order
