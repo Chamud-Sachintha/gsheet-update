@@ -75,7 +75,7 @@ for each_task_id in task_id_list:
         'REQUIREMENT': "#" + task['id'] + ": " + task['subject'] + " - " + task['project'],
         'EMPLOYEE NAME': 'Chamud Sachintha',
         'CR / BUG / TASK': task['type'],
-        'PLATFORM (PHP / JAVA)': ("JAVA" if task['project'] == "JAVA" else "PHP") 
+        'PLATFORM (PHP / JAVA)': ("JAVA" if task['project'] == "FHZQ" else "PHP") 
     }
 
     # Convert the dictionary to a list in the correct order
